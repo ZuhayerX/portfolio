@@ -81,6 +81,7 @@
           To improve movement efficiency, MechaHex integrates AI and reinforcement learning for optimizing gaits. It is controlled remotely through a web interface using MQTT/WebSockets, making it easy to monitor and control wirelessly. The power management is optimized to ensure smooth and energy-efficient motion.
           <br>
           MechaHex is a step towards creating smarter, adaptive robotic systems. It demonstrates how AI, embedded systems, and robotics can work together to solve real-world challenges.
+          <br>Know more about MechaHex at <a href="https://electro121.github.io/MechaHex/" style="color: aqua;">https://electro121.github.io/MechaHex/</a>
         </span>
         <button class="read-more-btn" onclick="toggleText(this)">Read More</button>
       </p>
@@ -193,18 +194,6 @@
         star.style.animationDelay = Math.random() * 2 + 's';
         starsContainer.appendChild(star);
     }
-
-    // Optional: Adjust astronaut size on window resize
-    window.addEventListener('resize', () => {
-        const astronaut = document.querySelector('.astronaut');
-        if (window.innerWidth < 768) {
-        astronaut.style.width = '200px';
-        } else if (window.innerWidth > 1200) {
-        astronaut.style.width = '350px';
-        } else {
-        astronaut.style.width = '250px';
-        }
-    });
   
     // Smooth scroll for all anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
